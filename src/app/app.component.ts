@@ -26,6 +26,10 @@ export class AppComponent {
 
   }
 
+  printDoble(num1: number, num2: number) {
+    this.pantalla += "" + num1 + num2;
+  }
+
   printPunt(punt: string) {
     if (this.contador < 1)
       this.pantalla += "" + punt;
@@ -34,6 +38,7 @@ export class AppComponent {
 
   delete() {
     this.pantalla = "";
+    this.pantalla2 = 0;
     this.num1 = 0;
     this.num2 = 0;
     this.resultat = 0;
@@ -63,6 +68,14 @@ export class AppComponent {
 
   }
 
+  div() {
+    this.operador = "/";
+    this.num1 = this.pantalla;  //Modificada la variable pantalla a any, para recoger el valor
+    this.pantalla = "";
+    this.contador = 0;
+
+  }
+
 
   igual() {
     this.num2 = this.pantalla;
@@ -70,8 +83,6 @@ export class AppComponent {
     this.pantalla = this.resultat;
     this.resultat2 = (this.num1 + this.operador + this.num2);
     this.pantalla2 = this.resultat2;
-
-
 
   }
   // Reiniciar operadores a contador= 0
