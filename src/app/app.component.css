@@ -84,10 +84,10 @@ td {
   display: grid;
   grid-template-rows: repeat(5, 1fr);
   grid-template-columns: repeat(4, 1fr);
-  width: 50%;
+  width: 60%;
   height: 550px;
   background-color: hsl(182, 20%, 80%);
-  border-radius: 15px;
+  border-radius: 10px;
   font-family: Arial, Helvetica, sans-serif;
   column-gap: 10px;
   row-gap: 15px;
@@ -97,7 +97,6 @@ td {
 }
 
 #calc-display {
-  display: flex;
   background-color: #111;
   color: white;
   grid-column-start: 1;
@@ -106,12 +105,14 @@ td {
   grid-row-end: 2;
   border-radius: 5px;
   text-align: right;
-  font-size: 2.2rem;
+  font-size: 2rem;
   justify-content: end;
   align-items: center;
   overflow: hidden;
-  padding: 1rem;
+
 }
+
+
 
 .calc-btn {
   display: flex;
