@@ -85,7 +85,7 @@ td {
   grid-template-rows: repeat(5, 1fr);
   grid-template-columns: repeat(4, 1fr);
   width: 60%;
-  height: 550px;
+  height: 590px;
   background-color: hsl(182, 20%, 80%);
   border-radius: 10px;
   font-family: Arial, Helvetica, sans-serif;
