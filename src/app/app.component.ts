@@ -85,6 +85,6 @@ export class AppComponent {
     this.pantalla2 = this.resultat2;
 
   }
-  // Reiniciar operadores a contador= 0
+  
 }
 
