@@ -1,0 +1,57 @@
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
+<!-- * * * * * * * to get started with your project! * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"></script>
+
+
+      <body>
+
+        <main id="eventParr">
+
+            <h1>14 - Calculadora</h1>
+
+            <div id="calculadora-container">
+                <div id="calc-display"><span>{{ pantalla }}</span></div>
+
+                <!-- numeros -->
+                <div id="calc-7" class="calc-btn" (click)="printNumber(7)">7</div>
+                <div id="calc-8" class="calc-btn" (click)="printNumber(8)">8</div>
+                <div id="calc-9" class="calc-btn" (click)="printNumber(9)">9</div>
+                <div id="calc-4" class="calc-btn" (click)="printNumber(4)">4</div>
+                <div id="calc-5" class="calc-btn" (click)="printNumber(5)">5</div>
+                <div id="calc-6" class="calc-btn" (click)="printNumber(6)">6</div>
+                <div id="calc-1" class="calc-btn" (click)="printNumber(1)">1</div>
+                <div id="calc-2" class="calc-btn" (click)="printNumber(2)">2</div>
+                <div id="calc-3" class="calc-btn" (click)="printNumber(3)">3</div>
+                <div id="calc-0" class="calc-btn" (click)="printNumber(0)">0</div>
+                <!-- cancelar -->
+                <div id="calc-punto" class="calc-btn" (click)="printPunt('.')">.</div>
+                <div id="calc-c" class="calc-btn" (click)="delete()">C</div>
+                <!-- operaciones -->
+                <div id="calc-plus" class="calc-btn">+</div>
+                <div id="calc-minus" class="calc-btn">-</div>
+                <div id="calc-multiplicar" class="calc-btn">*</div>
+                <div id="calc-igual" class="calc-btn">=</div>
+
+
+            </div>
+
+
+            <a class="link-button" href="../index.html">Inicio</a>
+        </main>
+
+    </body>
+
+
+<router-outlet></router-outlet>
